@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicados</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #7E9AAC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 600px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .header button {
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+
+        .search-bar svg {
+            width: 24px;
+            height: 24px;
+            color: #888;
+        }
+
+        .comunicado {
+            background-color: white;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .comunicado-content h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .comunicado-content p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .comunicado-footer {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .actions img {
+            margin-left: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        /* Modal (oculto por padrão) */
+.modal {
+    display: none; /* Escondido inicialmente */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com opacidade */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.modal-content h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.modal-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+#confirmar-btn {
+    background-color: rgba(157, 49, 189, 1);
+    color: white;
+}
+
+#confirmar-btn:hover {
+    background-color: #6b47a8;
+}
+
+/* Botão "Não" branco com borda roxa */
+#cancelar-btn {
+    background-color: white;
+    color: rgba(157, 49, 189, 1);
+    border: 2px solid rgba(157, 49, 189, 1);
+}
+
+#cancelar-btn:hover {
+    background-color: rgba(157, 49, 189, 0.1);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button onclick="window.location.href='index.html'"> < </button>
+            <h1>Comunicados</h1>
+            <button onclick="window.location.href='addcomunicados.html'">+</button>
+        </div>
+
+        <div class="search-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 4a6 6 0 100 12 6 6 0 000-12zM21 21l-4.35-4.35"/>
+            </svg>
+            <input type="text" placeholder="Buscar comunicado...">
+        </div>
+
+        <div class="comunicado">
+            <div class="comunicado-content">
+                <p>29 de Setembro</p>
+                <h3>Reunião geral dos pais</h3>
+                <p>Todos da nossa equipe escolar convida todos os pais para uma reunião de alinhamento depois das férias.</p>
+                <div class="comunicado-footer">
+                    <p>⏰ 14:30 até 17:00</p>
+                </div>
+            </div>
+
+            <div class="actions">
+                <img src="https://img.icons8.com/material-outlined/24/000000/edit--v1.png" alt="Editar" >
+                <img src="https://img.icons8.com/material-outlined/24/000000/delete.png" alt="Excluir">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

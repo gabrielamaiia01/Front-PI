@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Aluno(a)</title>
+    <link rel="stylesheet" href="CSS/addalunos.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <button class="back-button" onclick="window.location.href='alunos.html'">&larr;</button>
+            <h1>Adicionar Aluno(a)</h1>
+            <button class="save-button">Salvar</button>
+        </div>
+    </header>
+
+    <!-- Student Details Section -->
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Detalhes do Estudante</h2>
+            <div class="form-group">
+                <div class="photo-upload">
+                    <label for="photo">Foto</label>
+                    <div class="drop-area">
+                        <p>Drag and drop or click here to select file</p>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="firstName">Primeiro Nome *</label>
+                    <input type="text" id="firstName" >
+                </div>
+                <div class="input-group">
+                    <label for="lastName">Sobrenome *</label>
+                    <input type="text" id="lastName" placeholder="William">
+                </div>
+                <div class="input-group">
+                    <label for="dob">Data de Nascimento *</label>
+                    <input type="text" id="dob" >
+                    <input type="text" id="placeOfBirth" >
+                </div>
+                <div class="input-group">
+                    <label for="parentName">Nome do Responsável *</label>
+                    <input type="text" id="parentName" placeholder="Mara William">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="william@gmail.com">
+                </div>
+                <div class="input-group">
+                    <label for="phone">Telefone *</label>
+                    <input type="text" id="phone" placeholder="+1234567890">
+                </div>
+                <div class="input-group">
+                    <label for="address">Endereço*</label>
+                    <textarea id="address" rows="3" placeholder="Enter address here..."></textarea>
+                    <small>0/2000</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Details Section -->
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Informações do Responsável</h2>
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="parentFirstName">Primeiro Nome *</label>
+                    <input type="text" id="parentFirstName" placeholder="Mara">
+                </div>
+                <div class="input-group">
+                    <label for="parentLastName">Sobrenome *</label>
+                    <input type="text" id="parentLastName" placeholder="William">
+                </div>
+                <div class="input-group">
+                    <label for="parentEmail">Email *</label>
+                    <input type="email" id="parentEmail" placeholder="Mara@gmail.com">
+                </div>
+                <div class="input-group">
+                    <label for="parentPhone">Telefone *</label>
+                    <input type="text" id="parentPhone" placeholder="+1234567890">
+                </div>
+                <div class="input-group">
+                    <label for="parentAddress">Endereço *</label>
+                    <textarea id="parentAddress" rows="3" placeholder="Enter address here..."></textarea>
+                    <small>0/2000</small>
+                </div>
+    
+        </div>
+    </section>
+
+</body>
+</html>

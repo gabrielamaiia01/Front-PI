@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Alunos</title>
+    <link rel="stylesheet" href="CSS/alunos.css">
+</head>
+<body>
+
+
+    <!-- Search bar and add button -->
+    <section class="search-section">
+        <button class="back-button" onclick="window.location.href='index.html'">&larr;</button>
+        <h2>Alunos</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="">
+            <button class="add-button" onclick="window.location.href='addalunos.html'" >+</button>
+        </div>
+    </section>
+
+    <!-- Table for students -->
+    <section class="student-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>ID</th>
+                    <th>Responsável</th>
+                    <th>Contato</th>
+                    <th>Turma</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"> Samanta William</td>
+                    <td>#123456789</td>
+            
+                    <td>Mara William</td>
+                    <td class="contact-icons">
+                        <button class="phone-icon"></button>
+                        <button class="email-icon"></button>
+                    </td>
+                    <td><span class="grade badge-orange"> 1º A </span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> Tony Soap</td>
+                    <td>#123456789</td>
+                    <td>James Soap</td>
+                    <td class="contact-icons">
+                        <button class="phone-icon"></button>
+                        <button class="email-icon"></button>
+                    </td>
+                    <td><span class="grade badge-yellow">1º B</span></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

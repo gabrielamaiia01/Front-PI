@@ -1,0 +1,137 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8F1F8;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #A02B9D;
+    color: #E8F1F8;
+}
+
+.menu-icon {
+    font-size: 1.2em;
+}
+
+.user-info {
+    font-size: 1.2em;
+}
+
+.user-icon {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+} 
+/* Search section styling */
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F2F2F2;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #CCC;
+    width: 300px;
+}
+
+.add-button {
+    margin-left: 10px;
+    background-color: #A02B9D;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 20%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.back-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h2 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Table styling */
+.student-table {
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table thead {
+    background-color: #F9FAFB;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+}
+
+table th {
+    color: #333;
+}
+
+table td {
+    border-bottom: 1px solid #EEE;
+}
+
+.contact-icons button {
+    background: none;
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.contact-icons .phone-icon::before {
+    content: url('phone-icon.png'); /* Add your phone icon here */
+}
+
+.contact-icons .email-icon::before {
+    content: url('email-icon.png'); /* Add your email icon here */
+}
+
+.grade {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.badge-orange {
+    background-color: #F39C12;
+}
+
+.badge-yellow {
+    background-color: #F1C40F;
+}
+
+.badge-purple {
+    background-color: #9B59B6;
+}
